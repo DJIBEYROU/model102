@@ -14,7 +14,7 @@
 SDOM (Storage Deployment Optimization Model) is an open-source, high-resolution grid capacity-expansion framework developed by NLR. It’s purpose-built to optimize the storage portfolio considering diverse storage technologies, leveraging hourly temporal resolution and granular spatial representation of Variable Renewable Energy (VRE) sources such as solar and wind.
 
 SDOM is particularly well-suited for figure out the required capacity to meet a carbon-free generation mix target by:
-- 📆 Evaluating long-duration and seasonal storage technologies
+- 📆 Evaluating required optimal short, long-duration and seasonal storage portfolios
 - 🌦 Analyzing complementarity and synergies among diverse VRE resources and load profile
 - 📉 Assessing curtailment and operational strategies under various grid scenarios
 

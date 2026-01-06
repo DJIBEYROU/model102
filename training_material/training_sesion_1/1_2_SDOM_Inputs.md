@@ -32,7 +32,7 @@ data_dir = "sample_data\\br_test_daily_b\\"
 data = load_data( data_dir ) 
 ```
 
-In the next section each file will be listed and the data it is supossed to be in each field will be described.
+In the next sections each file will be listed and the data it is supossed to be in each field will be described.
 
 > **⚠️ Attention:**  
 >  - Make sure all required CSV files are present in the specified folder before starting the simulation.
@@ -189,7 +189,7 @@ This file provides the system hourly electricity demand time-series.
 
 
 ## 2.7 StorageData.csv
-This CSV input file provides key technical and economic parameters for diverse energy storage technologies (Some examples could be: Li-Ion (Lithium-Ion), CAES (Compressed Air Energy Storage), PHS (Pumped Hydro Storage), and H2 (Hydrogen Storage)). Each column represents a technology, and each row specifies a parameter:
+This CSV input file provides key technical and economic parameters for diverse energy storage technologies (Some examples could be: Li-Ion (Lithium-Ion), CAES (Compressed Air Energy Storage), PHS (Pumped Hydro Storage), H2 (Hydrogen Storage), etc). Each column represents a technology, and each row specifies a parameter:
 
 | Field        | Description                                                                                                    | Expected type   |
 |--------------|----------------------------------------------------------------------------------------------------------------|-----------------|
@@ -207,7 +207,7 @@ This CSV input file provides key technical and economic parameters for diverse e
 | CostRatio    | Ratio of cost allocation between input and output power. If Input Power Capex = Output Power Capex, then CostRatio = 0.5| float           |
 
 **Key considerations:**
-- If you dont have energy CAPEX for the technology, and you only have power CAPEX for a particular duration, enforce Min_Duration==Max_Duration.
+- If you dont have energy CAPEX for the technology, and you only have power CAPEX for a particular duration, enforce ```Min_Duration==Max_Duration```.
 - If the power capex is equally divided for the input power capacity and output power capacity, set CostRatio = 0.5.
 - if the storage technology does not have an specification for MaxCycles, use a large value.
 

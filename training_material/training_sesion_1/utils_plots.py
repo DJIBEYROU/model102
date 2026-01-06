@@ -137,7 +137,7 @@ def plot_heatmap(
     # Create the DataFrame with the hours
     df = pd.DataFrame(data=hours, columns=["Hour of the Year"])
     # Create a DatetimeIndex for a year (assuming the data starts at the beginning of the year)
-    datetime_index = pd.date_range(start=start_date, periods=n_periods, freq='H')
+    datetime_index = pd.date_range(start=start_date, periods=n_periods, freq='h')
     # Assign the DatetimeIndex to the DataFrame
     df['timestamp'] = datetime_index
 
