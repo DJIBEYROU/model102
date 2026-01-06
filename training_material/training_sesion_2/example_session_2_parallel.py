@@ -51,12 +51,12 @@ def run_simulation_with_factor(factor, current_folder):
     data = load_data(data_dir)
     
     # Modify the P_capex row by multiplying with the factor
-    if "storage_data" in data and "P_capex" in data["storage_data"].index:
-        print(f"Original P_capex values:\n{data['storage_data'].loc['P_capex']}")
-        data["storage_data"].loc["P_capex"] = data["storage_data"].loc["P_capex"] * factor
-        print(f"Modified P_capex values (factor={factor}):\n{data['storage_data'].loc['P_capex']}\n")
+    if "storage_data" in data and "P_Capex" in data["storage_data"].index:
+        print(f"Original P_capex values:\n{data['storage_data'].loc['P_Capex']}")
+        data["storage_data"].loc["P_Capex"] = data["storage_data"].loc["P_Capex"] * factor
+        print(f"Modified P_capex values (factor={factor}):\n{data['storage_data'].loc['P_Capex']}\n")
     else:
-        print(f"WARNING: Could not find 'P_capex' in storage_data for factor {factor}")
+        print(f"WARNING: Could not find 'P_Capex' in storage_data for factor {factor}")
     
     # Set output directory
     output_dir = os.path.join(current_folder, f'sample_results_{case}')

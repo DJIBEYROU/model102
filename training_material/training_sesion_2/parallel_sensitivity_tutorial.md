@@ -79,14 +79,18 @@ Each parallel process loads its own copy of the data.
 
 #### Step 3.2: Modify Storage CAPEX
 ```python
-if "storage_data" in data and "P_capex" in data["storage_data"].index:
-    data["storage_data"].loc["P_capex"] = data["storage_data"].loc["P_capex"] * factor
+if "storage_data" in data and "P_Capex" in data["storage_data"].index:
+        print(f"Original P_capex values:\n{data['storage_data'].loc['P_Capex']}")
+        data["storage_data"].loc["P_Capex"] = data["storage_data"].loc["P_Capex"] * factor
+        print(f"Modified P_capex values (factor={factor}):\n{data['storage_data'].loc['P_Capex']}\n")
+    else:
+        print(f"WARNING: Could not find 'P_Capex' in storage_data for factor {factor}")
 ```
 
 **What's happening:**
-- Locates the `P_capex` row in the `storage_data` DataFrame
+- Locates the `P_Capex` row in the `storage_data` DataFrame
 - Multiplies **all columns** of that row by the factor
-- For example, if original P_capex = [100, 200, 150] and factor = 0.8, new values = [80, 160, 120]
+- For example, if original P_Capex = [100, 200, 150] and factor = 0.8, new values = [80, 160, 120]
 
 #### Step 3.3: Initialize and Run Model
 ```python
