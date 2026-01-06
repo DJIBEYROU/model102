@@ -1,3 +1,8 @@
+<div align="center">
+  <img src="figs\NLR.png" alt="NLR Logo">
+</div>
+
+
 # Tutorial: Parallel Sensitivity Analysis with SDOM
 
 ## Overview
