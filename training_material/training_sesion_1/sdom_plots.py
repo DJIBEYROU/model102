@@ -10,8 +10,8 @@ current_folder = os.getcwd()
 print("Current folder:", current_folder)
 
 # Configuration----------------------------------
-start_date = '2025-01-01 00:00:00' # Or any starting date
-case_name = "br_test_daily_b"
+start_date = '2035-01-01 00:00:00' # Or any starting date
+case_name = "Data"
 prefix_folder_name = "sample_results"
 # Configuration----------------------------------
 

@@ -1,9 +1,10 @@
-# IMPORT SDOM MODULE
-import sdom
 
+# IMPORT SDOM MODULE
+###  IMPORT PACKAGES 
+
+import sdom
 from sdom import run_solver, initialize_model, configure_logging, get_default_solver_config_dict
 from sdom import load_data, export_results
-
 import logging
 import highspy
 import os
@@ -16,7 +17,8 @@ configure_logging(level=logging.INFO)
 current_folder = os.getcwd()
 print("Current folder:", current_folder)
 
-storage_capex_factors = [1.0, 0.9, 0.8]  # Example factors for sensitivity analysis
+#storage_capex_factors = [1.0, 0.9, 0.8]  # Example factors for sensitivity analysis
+storage_capex_factors = [1.0, 0.9]  # Example factors for sensitivity analysis
 
 
 def run_simulation_with_factor(factor, current_folder):
