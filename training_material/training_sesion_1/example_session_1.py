@@ -16,7 +16,7 @@ print("Current folder:", current_folder)
 
 
 
-n_steps = 730*1  
+n_steps = 730*6  
 # Number of steps in the simulation (IN HOURS - RECOMENDED = 8760)
 with_resilience_constraints = False
  # If True, the model will include resilience constraints, which ensure that the system can withstand certain disruptions or failures. If False, the model will not include these constraints.
@@ -25,7 +25,7 @@ case = "Data"
 # Case name, used for naming output files
 
 #data_dir = os.path.join(current_folder, "sample_data", "br_test_daily_b") 
-data_dir = os.path.join(current_folder, "SDOM_Hokkaido", "Data") 
+data_dir = os.path.join(current_folder, "SDOM_Hokkaido", "Data_sdom_python") 
 
 #INCLUDE THE FOLDER PATH WHERE YOU HAVE THE INPUT .CSV FILES SDOM REQUIRES (Python version does not requires txt files)
 data = load_data( data_dir ) 
