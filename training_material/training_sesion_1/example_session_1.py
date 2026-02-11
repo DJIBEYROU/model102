@@ -16,7 +16,7 @@ print("Current folder:", current_folder)
 
 
 
-n_steps = 730*6  
+n_steps = 8760
 # Number of steps in the simulation (IN HOURS - RECOMENDED = 8760)
 with_resilience_constraints = False
  # If True, the model will include resilience constraints, which ensure that the system can withstand certain disruptions or failures. If False, the model will not include these constraints.
